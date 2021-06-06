@@ -1,0 +1,23 @@
+.primary {
+  border: 1px solid var(--light-500);
+  border-radius: 9999px;
+  height: 1rem;
+  width: 2rem;
+  position: relative;
+  cursor: pointer;
+  input {
+    display: none;
+  }
+}
+
+.knob {
+  transition: 0.3s;
+  background: var(--light-500);
+  border-radius: 9999px;
+  border: 1px solid;
+  display: block;
+  height: calc(1rem - 2px);
+  position: absolute;
+  top: 0px;
+  width: calc(1rem - 2px);
+}

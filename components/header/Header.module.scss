@@ -1,0 +1,13 @@
+.primary {
+  background-color: var(--light-100);
+  border-bottom: 1px solid var(--light-500);
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}

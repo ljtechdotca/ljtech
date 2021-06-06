@@ -1,0 +1,11 @@
+.primary {
+  border-radius: 3px;
+  border: 1px solid var(--dark-500);
+  padding: 0.5rem;
+}
+
+.secondary {
+  @extend .primary;
+  background-color: var(--dark-500);
+  color: var(--light-100);
+}

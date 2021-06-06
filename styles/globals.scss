@@ -1,0 +1,145 @@
+:root {
+  --size-100: 0.5rem;
+  --size-200: 0.6rem;
+  --size-300: 0.7rem;
+  --size-400: 0.8rem;
+  --size-500: 1rem;
+  --size-600: 1.2rem;
+  --size-700: 2rem;
+  --size-800: 2.5rem;
+  --size-900: 3rem;
+
+  --dark-100: #5c5f68;
+  --dark-200: #50525b;
+  --dark-300: #44464d;
+  --dark-400: #383a3f;
+  --dark-500: #2c2d32;
+  --dark-600: #202124;
+  --dark-700: #141517;
+  --dark-800: #080809;
+  --dark-900: #000000;
+
+  --light-100: #ffffff;
+  --light-200: #f6f6f6;
+  --light-300: #e9e9e9;
+  --light-400: #dddddd;
+  --light-500: #d0d0d0;
+  --light-600: #c3c3c3;
+  --light-700: #b6b6b6;
+  --light-800: #a9a9a9;
+  --light-900: #9c9c9c;
+
+  --red-500: #ef4444;
+
+  --green-500: #1da96a;
+
+  --blue-500: #3b82f6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: var(--size-600);
+}
+
+button {
+  cursor: pointer;
+  font-size: var(--size-600);
+}
+
+p {
+  font-size: var(--size-600);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: var(--size-600);
+}
+
+h1 {
+  font-size: var(--size-900);
+}
+h2 {
+  font-size: var(--size-800);
+}
+h3 {
+  font-size: var(--size-700);
+}
+h4 {
+  font-size: var(--size-600);
+}
+h5 {
+  font-size: var(--size-500);
+}
+h6 {
+  font-size: var(--size-400);
+}
+
+label {
+  font-size: var(--size-600);
+}
+
+input[type="color"] {
+  padding: 0;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid var(--light-500);
+  font-size: var(--size-600);
+  font-size: var(--size-600);
+  margin: 0.5rem;
+  min-height: 24px;
+  padding: 0.5rem;
+  width: calc(100% - 1rem);
+}
+
+textarea {
+  border-radius: 3px;
+  border: 1px solid var(--light-500);
+  font-size: var(--size-600);
+  margin: 0.5rem;
+  min-height: 24px;
+  padding: 0.5rem;
+  resize: vertical;
+  width: calc(100% - 1rem);
+}
+
+select {
+  border-radius: 3px;
+  border: 1px solid var(--light-500);
+  font-size: var(--size-600);
+  margin: 0.5rem;
+  min-height: 24px;
+  padding: 0.5rem;
+  width: calc(100% - 1rem);
+}
+
+.light {
+  * {
+    background-color: var(--light-100);
+    color: var(--dark-900);
+  }
+}
+
+.dark {
+  * {
+    background-color: var(--dark-900);
+    color: var(--light-100);
+  }
+}

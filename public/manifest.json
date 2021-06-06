@@ -1,0 +1,26 @@
+{
+  "name": "<YOUR_APP_NAME>",
+  "short_name": "<YOUR_APP_SHORT_NAME>",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#3b82f6",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/128h/logo.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/192h/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/512h/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
