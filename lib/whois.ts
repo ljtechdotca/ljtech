@@ -1,4 +1,6 @@
+//TODO: Fill out your application 
+
 export const whois = {
   domain: "ljtech.ca",
-  twitter: "twitter",
+  handle: "ljtechdotca",
 };

@@ -1,3 +1,5 @@
+//TODO: Meta requires new default props on line 20 and 22, and a default image src on line 53
+
 import { whois } from "@lib/whois";
 import { NextSeo } from "next-seo";
 
@@ -14,7 +16,11 @@ export interface IImageProps {
   width: number;
 }
 
-export const Meta = ({ description, images, title }: IMetaProps) => (
+export const Meta = ({
+  description = "Start your own website with this TypeScript boilerplate.",
+  images,
+  title = "ljtech Boilerplate",
+}: IMetaProps) => (
   <>
     <NextSeo
       title={title}
@@ -53,7 +59,7 @@ export const Meta = ({ description, images, title }: IMetaProps) => (
         site_name: whois.domain,
       }}
       twitter={{
-        handle: `@${whois.twitter}`,
+        handle: `@${whois.handle}`,
         site: `@${whois.domain}`,
         cardType: "summary_large_image",
       }}
