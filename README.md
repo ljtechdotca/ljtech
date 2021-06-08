@@ -6,7 +6,7 @@ Start your own website with this simple boilerplate.
 
 ## Authors
 
-- [@ljtechdotca](https://www.github.com/ljtechdotca/ljtech)
+- [@ljtechdotca](https://www.github.com/ljtechdotca)
 
 ## Features
 
@@ -19,7 +19,7 @@ Start your own website with this simple boilerplate.
 Clone the project
 
 ```bash
-  git clone https://www.github.com/ljtechdotca/ljtech
+  git clone https://www.github.com/ljtechdotca/boilerplate
 ```
 
 Go to the project directory
