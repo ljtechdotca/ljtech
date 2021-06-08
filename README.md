@@ -22,7 +22,7 @@ Start your own website with this TypeScript boilerplate.
 Clone the project
 
 ```bash
-git clone https://www.github.com/ljtechdotca/boilerplate.git/
+git clone https://github.com/ljtechdotca/boilerplate.git/
 ```
 
 Go to the project directory
