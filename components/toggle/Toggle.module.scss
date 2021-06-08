@@ -1,22 +1,54 @@
-.primary {
-  border: 1px solid var(--light-500);
+.toggle {
+  border: 1px solid;
   border-radius: 9999px;
-  height: 1rem;
-  width: 2rem;
+  height: 1.8rem;
+  width: 3rem;
   position: relative;
   cursor: pointer;
+  &__dark {
+    @extend .toggle;
+    border-color: var(--purple-400);
+    background-color: var(--purple-400);
+  }
+  &__light {
+    @extend .toggle;
+    border-color: var(--blue-300);
+    background-color: var(--blue-300);
+  }
+
   input {
     display: none;
+  }
+  &:hover {
+    transition-duration: 1s;
+    .knob {
+      transform: scale(1);
+    }
   }
 }
 
 .knob {
-  background: var(--light-500);
   border-radius: 9999px;
-  border: 1px solid;
+  border: 3px solid;
   display: block;
-  height: calc(1rem - 2px);
+  height: calc(1.8rem - 4px);
   position: absolute;
-  top: 0px;
-  width: calc(1rem - 2px);
+  top: 1px;
+  width: calc(1.8rem - 4px);
+  transform: scale(0.8);
+  display: grid;
+  user-select: none;
+  place-items: center;
+  &__dark {
+    @extend .knob;
+    right: 2px;
+    border-color: var(--dark-200);
+    background-color: var(--purple-200);
+  }
+  &__light {
+    @extend .knob;
+    right: calc(1.5rem - 4px);
+    border-color: var(--yellow-600);
+    background-color: var(--yellow-400);
+  }
 }

@@ -8,7 +8,51 @@
   --size-700: 2rem;
   --size-800: 2.5rem;
   --size-900: 3rem;
+  --blue-100: #c9e2fe;
+  --blue-200: #b3d6fd;
+  --blue-300: #93c5fd;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+  --green-100: #c0e7d5;
+  --green-200: #a7ddc4;
+  --green-300: #82cfac;
+  --green-400: #36b37a;
+  --green-500: #1da96a;
+  --green-600: #05a05a;
+  --green-700: #049051;
+  --pink-100: #fcd3e9;
+  --pink-200: #fac2e0;
+  --pink-300: #f9a8d4;
+  --pink-400: #f472b6;
+  --pink-500: #ec4899;
+  --pink-600: #db2777;
+  --pink-700: #be185d;
+  --purple-100: #ebd9fe;
+  --purple-200: #e3cafe;
+  --purple-300: #d8b4fe;
+  --purple-400: #a78bfa;
+  --purple-500: #8b5cf6;
+  --purple-600: #7c3aed;
+  --purple-700: #6d28d9;
+  --red-100: #fddbdb;
+  --red-200: #fcb7b7;
+  --red-300: #fca5a5;
+  --red-400: #f87171;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+  --yellow-100: #fef4bf;
+  --yellow-200: #fdee9f;
+  --yellow-300: #fde97f;
+  --yellow-400: #fde460;
+  --yellow-500: #fde047;
+  --yellow-600: #facc15;
+  --yellow-700: #eab308;
+}
 
+.light {
   --dark-100: #5c5f68;
   --dark-200: #50525b;
   --dark-300: #44464d;
@@ -18,7 +62,6 @@
   --dark-700: #141517;
   --dark-800: #080809;
   --dark-900: #000000;
-
   --light-100: #ffffff;
   --light-200: #f6f6f6;
   --light-300: #e9e9e9;
@@ -28,12 +71,33 @@
   --light-700: #b6b6b6;
   --light-800: #a9a9a9;
   --light-900: #9c9c9c;
+  transition: 0.4s;
+  background-color: var(--light-100);
+  color: var(--dark-500);
+}
 
-  --red-500: #ef4444;
-
-  --green-500: #1da96a;
-
-  --blue-500: #3b82f6;
+.dark {
+  --dark-100: #ffffff;
+  --dark-200: #f6f6f6;
+  --dark-300: #e9e9e9;
+  --dark-400: #dddddd;
+  --dark-500: #d0d0d0;
+  --dark-600: #c3c3c3;
+  --dark-700: #b6b6b6;
+  --dark-800: #a9a9a9;
+  --dark-900: #9c9c9c;
+  --light-100: #5c5f68;
+  --light-200: #50525b;
+  --light-300: #44464d;
+  --light-400: #383a3f;
+  --light-500: #2c2d32;
+  --light-600: #202124;
+  --light-700: #141517;
+  --light-800: #080809;
+  --light-900: #000000;
+  transition: 0.4s;
+  background-color: var(--light-500);
+  color: var(--dark-100);
 }
 
 * {
@@ -55,6 +119,7 @@ a {
 }
 
 button {
+  background-color: unset;
   cursor: pointer;
   font-size: var(--size-600);
 }
@@ -100,7 +165,7 @@ input[type="color"] {
 
 input {
   border-radius: 3px;
-  border: 1px solid var(--light-500);
+  border: 1px solid var(--light-300);
   font-size: var(--size-600);
   font-size: var(--size-600);
   margin: 0.5rem;
@@ -111,7 +176,7 @@ input {
 
 textarea {
   border-radius: 3px;
-  border: 1px solid var(--light-500);
+  border: 1px solid var(--light-300);
   font-size: var(--size-600);
   margin: 0.5rem;
   min-height: 24px;
@@ -122,24 +187,10 @@ textarea {
 
 select {
   border-radius: 3px;
-  border: 1px solid var(--light-500);
+  border: 1px solid var(--light-300);
   font-size: var(--size-600);
   margin: 0.5rem;
   min-height: 24px;
   padding: 0.5rem;
   width: calc(100% - 1rem);
-}
-
-.light {
-  * {
-    background-color: var(--light-100);
-    color: var(--dark-900);
-  }
-}
-
-.dark {
-  * {
-    background-color: var(--dark-900);
-    color: var(--light-100);
-  }
 }

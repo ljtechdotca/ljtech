@@ -1,2 +1,19 @@
 .container {
+  display: grid;
+  margin: auto;
+  min-height: calc(100vh - 3rem);
+  max-width: 1440px;
+  padding: 1rem;
+  place-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.5rem;
+  margin: 1rem 0;
 }

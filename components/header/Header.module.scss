@@ -1,7 +1,6 @@
 .primary {
   background-color: var(--light-100);
-  border-bottom: 1px solid var(--light-500);
-  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--light-300);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -13,4 +12,5 @@
   justify-content: space-between;
   margin: auto;
   max-width: 1440px;
+  padding: 0.5rem 1rem;
 }

@@ -10,16 +10,19 @@ Start your own website with this TypeScript boilerplate.
 
 ## Features
 
-- Light/dark mode toggle
-- Responsive design
-- Typography
+- Analytics component using react-ga
+- Button component using next/link
+- Command `yarn component ComponentName`
+- Light/dark mode toggle component
+- Meta component using next-seo
+- Root variable color Palette
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-git clone https://www.github.com/ljtechdotca/boilerplate
+git clone https://www.github.com/ljtechdotca/boilerplate.git
 ```
 
 Go to the project directory
@@ -45,3 +48,10 @@ yarn dev
 **Client:** React, Next
 
 **Server:** Node
+
+## Dependencies
+
+- [@svgr/webpack](https://www.npmjs.com/package/@svgr/webpack)
+- [next-seo](https://www.npmjs.com/package/next-seo)
+- [node-sass](https://www.npmjs.com/package/node-sass)
+- [react-ga](https://www.npmjs.com/package/react-ga)

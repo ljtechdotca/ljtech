@@ -1,4 +1,5 @@
 import { ThemeContext } from "@lib/context";
+import Moon from "@public/moon.svg";
 import { useContext, useState } from "react";
 import styles from "./Toggle.module.scss";
 
@@ -8,16 +9,12 @@ export interface IToggleProps {
   styleType?: string;
 }
 
-export function Toggle({
-  className,
-  style,
-  styleType = "primary",
-}: IToggleProps) {
+export function Toggle({ className, style }: IToggleProps) {
   const { theme, setTheme } = useContext(ThemeContext);
   const [transition, setTransition] = useState("0s");
 
   const handleTheme = () => {
-    setTransition("0.3s");
+    setTransition("0.4s");
     if (theme === "dark") {
       localStorage.setItem("theme", "light");
       setTheme("light");
@@ -26,6 +23,8 @@ export function Toggle({
       setTheme("dark");
     }
   };
+
+  const styleType = `toggle__${theme}`;
 
   return (
     <div
@@ -36,21 +35,19 @@ export function Toggle({
       <input checked={theme === "dark"} type="checkbox" readOnly={true} />
 
       <span
-        className={styles.knob}
+        className={theme === "light" ? styles.knob__light : styles.knob__dark}
         style={
           theme === "light"
             ? {
-                right: "1rem",
-                borderColor: "yellow",
                 transition: transition,
               }
             : {
-                right: "0",
-                borderColor: "magenta",
                 transition: transition,
               }
         }
-      ></span>
+      >
+        {theme === "light" ? "" : <Moon width="10" height="10" />}
+      </span>
     </div>
   );
 }
