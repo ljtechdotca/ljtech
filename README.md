@@ -2,7 +2,7 @@
 
 # ljtech Boilerplate
 
-Start your own website with this simple boilerplate.
+Start your own website with this TypeScript boilerplate.
 
 ## Authors
 
