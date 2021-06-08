@@ -3,6 +3,10 @@
   border-radius: 3px;
   border: 1px solid var(--dark-500);
   padding: 0.5rem;
+  transition: 0.4s;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .secondary {

@@ -71,9 +71,9 @@
   --light-700: #b6b6b6;
   --light-800: #a9a9a9;
   --light-900: #9c9c9c;
-  transition: 0.4s;
   background-color: var(--light-100);
   color: var(--dark-500);
+  transition: 0.4s;
 }
 
 .dark {
@@ -95,17 +95,17 @@
   --light-700: #141517;
   --light-800: #080809;
   --light-900: #000000;
-  transition: 0.4s;
   background-color: var(--light-500);
   color: var(--dark-100);
+  transition: 0.4s;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -114,8 +114,8 @@ html {
 
 a {
   color: inherit;
-  text-decoration: none;
   font-size: var(--size-600);
+  text-decoration: none;
 }
 
 button {
@@ -193,4 +193,9 @@ select {
   min-height: 24px;
   padding: 0.5rem;
   width: calc(100% - 1rem);
+}
+
+::selection {
+  background-color: var(--blue-500);
+  color: white;
 }

@@ -1,5 +1,6 @@
 import { Button } from "@components/button/Button";
 import { Meta } from "@components/meta/Meta";
+import { whois } from "@lib/whois";
 import Logo from "@public/ljtech.svg";
 import styles from "@styles/Home.module.scss";
 
@@ -12,14 +13,14 @@ export default function Home() {
         <h1>ljtech Boilerplate</h1>
         <div className={styles.action}>
           <Button
-            anchor={{ href: "https://ljtech.ca", target: "_blank" }}
+            anchor={{ href: `https://${whois.domain}`, target: "_blank" }}
             styleType="primary"
           >
             Visit ljtech.ca
           </Button>
           <Button
             anchor={{
-              href: "https://github.com/ljtechdotca/",
+              href: `https://github.com/${whois.handle}`,
               target: "_blank",
             }}
             styleType="secondary"
