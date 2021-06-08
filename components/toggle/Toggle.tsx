@@ -11,7 +11,7 @@ export interface IToggleProps {
 
 export function Toggle({ className, style }: IToggleProps) {
   const { theme, setTheme } = useContext(ThemeContext);
-  const [transition, setTransition] = useState("0s");
+  const [transition, setTransition] = useState("transform 0.4s");
 
   const handleTheme = () => {
     setTransition("0.4s");
