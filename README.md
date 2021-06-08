@@ -19,25 +19,25 @@ Start your own website with this simple boilerplate.
 Clone the project
 
 ```bash
-  git clone https://www.github.com/ljtechdotca/boilerplate
+git clone https://www.github.com/ljtechdotca/boilerplate
 ```
 
 Go to the project directory
 
 ```bash
-  cd boilerplate
+cd boilerplate
 ```
 
 Install dependencies
 
 ```bash
-  yarn
+yarn
 ```
 
 Start the server
 
 ```bash
-  yarn dev
+yarn dev
 ```
 
 ## Tech Stack
