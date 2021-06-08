@@ -4,15 +4,44 @@
 
 Start your own website with this simple boilerplate.
 
+## Authors
+
+- [@ljtechdotca](https://www.github.com/ljtechdotca/ljtech)
+
+## Features
+
+- Light/dark mode toggle
+- Responsive design
+- Typography
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://www.github.com/ljtechdotca/ljtech
+```
+
+Go to the project directory
+
+```bash
+  cd boilerplate
+```
+
+Install dependencies
+
+```bash
+  yarn
+```
+
+Start the server
+
+```bash
+  yarn dev
+```
+
 ## Tech Stack
 
-**Client:** React, Next.js
+**Client:** React, Next
 
-**Server:** Node, Express
-
-## Packages
-
-- [@svgr/webpack](https://www.npmjs.com/package/@svgr/webpack)
-- [next-seo](https://www.npmjs.com/package/next-seo)
-- [node-sass](https://www.npmjs.com/package/node-sass)
-- [react-ga](https://www.npmjs.com/package/react-ga)
+**Server:** Node

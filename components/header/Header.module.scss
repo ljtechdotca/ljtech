@@ -8,6 +8,9 @@
 }
 
 .container {
-  max-width: 1440px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   margin: auto;
+  max-width: 1440px;
 }

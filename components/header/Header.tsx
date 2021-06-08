@@ -1,3 +1,4 @@
+import { Toggle } from "../toggle/Toggle";
 import styles from "./Header.module.scss";
 
 export interface IHeaderProps {
@@ -6,7 +7,11 @@ export interface IHeaderProps {
   styleType?: string;
 }
 
-export function Header({ className, style, styleType = "primary" }: IHeaderProps) {
+export function Header({
+  className,
+  style,
+  styleType = "primary",
+}: IHeaderProps) {
   return (
     <header
       className={[className, styles[styleType]].filter(Boolean).join(" ")}
@@ -14,7 +19,8 @@ export function Header({ className, style, styleType = "primary" }: IHeaderProps
     >
       <div className={styles.container}>
         //TODO: Header
-        </div>
+        <Toggle />
+      </div>
     </header>
   );
 }

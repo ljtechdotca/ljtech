@@ -1,5 +1,5 @@
 import { ThemeContext } from "@lib/context";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import styles from "./Toggle.module.scss";
 
 export interface IToggleProps {
@@ -14,8 +14,10 @@ export function Toggle({
   styleType = "primary",
 }: IToggleProps) {
   const { theme, setTheme } = useContext(ThemeContext);
+  const [transition, setTransition] = useState("0s");
 
   const handleTheme = () => {
+    setTransition("0.3s");
     if (theme === "dark") {
       localStorage.setItem("theme", "light");
       setTheme("light");
@@ -40,10 +42,12 @@ export function Toggle({
             ? {
                 right: "1rem",
                 borderColor: "yellow",
+                transition: transition,
               }
             : {
                 right: "0",
                 borderColor: "magenta",
+                transition: transition,
               }
         }
       ></span>
