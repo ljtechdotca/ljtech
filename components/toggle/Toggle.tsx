@@ -1,4 +1,4 @@
-import { ThemeContext } from "@lib/context";
+import { ThemeContext, TransitionContext } from "@lib/context";
 import Moon from "@public/moon.svg";
 import { useContext, useState } from "react";
 import styles from "./Toggle.module.scss";
@@ -11,7 +11,7 @@ export interface IToggleProps {
 
 export function Toggle({ className, style }: IToggleProps) {
   const { theme, setTheme } = useContext(ThemeContext);
-  const [transition, setTransition] = useState("transform 0.4s");
+  const {transition, setTransition} = useContext(TransitionContext);
 
   const handleTheme = () => {
     setTransition("0.4s");
