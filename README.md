@@ -15,7 +15,7 @@ Start your own website with this TypeScript boilerplate.
 - Command `yarn component ComponentName`
 - Light/dark mode toggle component
 - Meta component using next-seo
-- Root variable color Palette
+- Root variable color palette
 
 ## Run Locally
 
