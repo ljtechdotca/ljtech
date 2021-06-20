@@ -52,6 +52,10 @@ yarn dev
 ## Dependencies
 
 - [@svgr/webpack](https://www.npmjs.com/package/@svgr/webpack)
+- [gray-matter](https://www.npmjs.com/package/gray-matter)
 - [next-seo](https://www.npmjs.com/package/next-seo)
 - [node-sass](https://www.npmjs.com/package/node-sass)
 - [react-ga](https://www.npmjs.com/package/react-ga)
+- [remark](https://www.npmjs.com/package/remark)
+- [remark-html](https://www.npmjs.com/package/remark-html)
+- [remark-prism](https://www.npmjs.com/package/remark-prism)
