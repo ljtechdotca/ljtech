@@ -1,0 +1,32 @@
+.primary {
+  padding: 8rem 0 6rem 0;
+  height: 100%;
+  @media (max-width: 640px) {
+    padding: 1rem 0 4rem 0;
+  }
+  .block {
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .link {
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--light-300);
+    display: flex;
+    padding: 0.5rem;
+    transition: 0.4s;
+    margin: 1rem 0.75rem 0;
+    &:hover {
+      color: var(--blue-500);
+      border-color: var(--blue-500);
+    }
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+}

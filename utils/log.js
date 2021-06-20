@@ -1,10 +1,8 @@
-//TODO: Google Analytics requires your tracking code on line 6
-
 import ReactGA from "react-ga";
 
 export const initGA = () => {
   console.log("Google Analytics: initialized");
-  ReactGA.initialize("UA-XXXXXXXXX-X");
+  ReactGA.initialize("UA-179108232-4");
 };
 
 export const logPageView = () => {

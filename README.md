@@ -1,8 +1,8 @@
 ![Logo](https://ljtech.ca/logo.png)
 
-# ljtech Boilerplate
+# ljtech Website
 
-Start your own website with this TypeScript boilerplate.
+A Web Design & Development business in Estevan Saskatchewan, specializing in custom websites, mobile-friendly designs and online marketing.
 
 ## Authors
 
@@ -22,13 +22,13 @@ Start your own website with this TypeScript boilerplate.
 Clone the project
 
 ```bash
-git clone https://github.com/ljtechdotca/boilerplate.git/
+git clone https://github.com/ljtechdotca/ljtech.git/
 ```
 
 Go to the project directory
 
 ```bash
-cd boilerplate
+cd ljtech
 ```
 
 Install dependencies

@@ -17,9 +17,9 @@ export interface IImageProps {
 }
 
 export const Meta = ({
-  description = "Start your own website with this TypeScript boilerplate.",
+  description = "A Web Design & Development business in Estevan Saskatchewan, specializing in custom websites, mobile-friendly designs and online marketing.",
   images,
-  title = "ljtech Boilerplate",
+  title = "ljtech",
 }: IMetaProps) => (
   <>
     <NextSeo
@@ -33,7 +33,7 @@ export const Meta = ({
         },
         {
           rel: "apple-touch-icon",
-          href: `https://${whois.domain}/icon.png`,
+          href: `https://${whois.domain}/76h/logo.png`,
           sizes: "76x76",
         },
         {
@@ -49,9 +49,9 @@ export const Meta = ({
           ...(images ?? [
             {
               alt: whois.domain,
-              height: 800,
-              url: `https://${whois.domain}/image.png`,
-              width: 900,
+              height: 512,
+              url: `https://${whois.domain}/512h/logo.png`,
+              width: 512,
             },
           ]),
           ,

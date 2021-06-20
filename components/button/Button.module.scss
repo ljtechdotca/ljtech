@@ -2,15 +2,26 @@
   display: inline-flex;
   border-radius: 3px;
   border: 1px solid var(--dark-500);
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   transition: 0.4s;
   &:hover {
     opacity: 0.5;
+  }
+  &__blue {
+    @extend .primary;
+    border: 1px solid var(--blue-500);
+    color: var(--blue-500);
   }
 }
 
 .secondary {
   @extend .primary;
   background-color: var(--dark-500);
-  color: var(--light-100);
+  color: var(--currentColor);
+  &__blue {
+    @extend .primary;
+    background-color: var(--blue-500);
+    border: 1px solid var(--blue-500);
+    color: var(--currentColor);
+  }
 }

@@ -1,0 +1,65 @@
+.primary {
+  padding: 8rem 0 6rem 0;
+  height: 100%;
+  @media (max-width: 640px) {
+    padding: 1rem 0 4rem 0;
+  }
+  .grid {
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 1.5rem 0;
+    place-items: start;
+    row-gap: 2rem;
+    max-width: 768px;
+    width: 100%;
+    @media (max-width: 768px) {
+      grid-template-columns: unset;
+      width: unset;
+    }
+  }
+  .card {
+    border: 1px solid var(--light-300);
+    border-radius: 6px;
+    transition: 0.4s;
+    font-weight: unset;
+    p {
+      padding: 1rem 2rem 2rem;
+      @media (max-width: 640px) {
+        padding: 0.5rem 1rem 1rem;
+      }
+    }
+    &:hover {
+      border-color: var(--blue-500);
+    }
+  }
+  .thumbnail {
+    padding: 2rem 2rem 0;
+    @media (max-width: 640px) {
+      padding: 1rem 1rem 0;
+    }
+  }
+  .heading {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-weight: 800;
+    @media (max-width: 640px) {
+      padding: 0.5rem 1rem;
+    }
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1rem;
+    padding: 0 2rem 1rem;
+    font-style: italic;
+    @media (max-width: 640px) {
+      padding: 0 1rem 0.5rem;
+    }
+    span {
+      font-weight: 600;
+      margin: 0 0.75rem;
+    }
+  }
+}

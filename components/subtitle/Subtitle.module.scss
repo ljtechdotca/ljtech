@@ -1,0 +1,8 @@
+.primary {
+  .heading {
+  }
+  &__center {
+    // @extend .primary;
+    text-align: center;
+  }
+}
