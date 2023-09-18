@@ -18,15 +18,22 @@
 }
 
 .contact {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 0.35rem;
   font-size: 1.125rem;
   font-weight: 600;
   color: #555555;
+  white-space: nowrap;
   background-color: hsl(160, 100%, 75%);
 }
 
 .contact:hover {
   text-decoration: unset;
   background-color: hsl(160, 100%, 85%);
+}
+
+@media (min-width: 468px) {
+  .contact {
+    padding: 1rem 3rem;
+  }
 }
