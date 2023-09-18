@@ -1,0 +1,17 @@
+.base {
+  position: relative;
+  padding: 0 0 0 2.25rem;
+  color: unset;
+  text-decoration: unset;
+  word-break: break-word;
+}
+
+.base:hover {
+  text-decoration: unset;
+}
+
+.svg {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.25rem;
+}
