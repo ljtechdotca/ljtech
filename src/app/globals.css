@@ -28,6 +28,12 @@ a:hover {
 
 @media (min-width: 468px) {
   body {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
     width: 75%;
   }
 }
