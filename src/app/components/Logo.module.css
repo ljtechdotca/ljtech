@@ -13,5 +13,6 @@
 .svg {
   position: absolute;
   left: 0.5rem;
-  top: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
